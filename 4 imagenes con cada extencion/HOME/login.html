@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CinemaThor</title>
+</head>
+
+<body>
+    <div class="cinemaContainer">
+        <div class="cinemaLogin">
+            <div class="ImgBusqueda">
+                <img src="media/find.png" width="30px" title="Buscar" class="img-busqueda">     
+                <input type="search" class="buscar" placeholder="Busqueda Por Palabra Clave">
+                <button class="busqueda">Buscar</button> 
+            </div>
+
+            <div class="login">
+                    <button class="inicioSesion"><a href="login.html">inicioSesion</a></button>     
+                    <button class="RegistrarSesion"><a href="Registro.html">RegistrarSesion</a></button>  
+            </div>
+        </div>
+        <div class="cinemaheader">
+            <div class="logo">
+                <a href="index.html"><img src="media/logo.png" width="100%" height="100%"></a>
+            </div class="header-menu">
+                <nav class="menu">
+                    <ul class="menu-principal">
+                        <li><a href="#">En Cartelera</a>
+                            <ul class="sub-menu">
+                                <li class="menu-uno"><a href="Clasicas.html">Clasicas</a></li>
+                                <li class="menu-dos"><a href="Independientes.html">Independientes</a></li>
+                                <li class="menu-tres"><a href="Nominadas.html">Nominadas Thor</a></li>
+                                <li class="menu-cuatro"><a href="Cartelera.html">En Cartelera</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Ventas</a></li>
+                        <li><a href="#">Tienda Vikinga</a></li>
+                        <li><a href="#">Comida</a></li>
+                        <li><a href="#">Tarjestas VIP</a></li>
+                        <li><a href="#">Biografias</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="content-form">
+            <h2 class="inicio">Inicio de Sesion</h2>
+            <form class="form">
+                <br>
+                <label><b>Usuario</b></label>
+                <br>
+                <input type="text" class="usuario">
+                <br>
+                <br>
+                <label><b>Contraseña</b></label>
+                <br>
+                <input type="password" class="contraseña">
+                <br>
+                <br>
+                <input type="button" value="Iniciar" class="boton">
+                <br>
+                <br>
+            </form>    
+        </div>
+    </div>
+    <script src="js/cinema.js"></script>
+
+</body>
+
+</html>

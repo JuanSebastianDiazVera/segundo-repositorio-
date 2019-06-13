@@ -1,0 +1,512 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("media/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.cinemaLogin{
+    display: inline-flex;
+    background-color: darkred;
+    height: 40px;
+    width: 100%;
+}
+.cinemaheader{
+    height: 100px;   
+}
+
+
+.logo img{
+    display: block;
+    width: 10%;
+    border-radius: 20px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.comidas{
+    display: inline-flex;
+    width: 100%;
+}
+
+.busqueda{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 2px #0d47a1;
+    border: black;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.cinemaBusqueda{
+    background-color: #3949AB;
+}
+.cinemaSliderCartelera{
+    grid-area: cinemaSliderCartelera;
+}
+.cinemaSliderCortos{
+    grid-area: cinemaSliderCortos;
+    background-color: yellow;
+}
+
+.c1{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 4px 4px 4px darkred;
+    border-radius: 6px;
+    position: relative;
+    left: 80px;
+}
+
+.c2{
+    width: 63%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 4px 4px 4px darkred;
+    border-radius: 6px;
+    position: relative;
+    right: -5px;
+}
+
+.p1{
+    box-shadow: 6px 6px 6px #3949AB;
+    width: 100%;
+}
+
+.cinemaBannerComida2{
+    grid-area: cinemaBannerComida2;
+}
+.cinemaBannerTienda{
+    box-shadow: 6px 6px 6px #3949AB;
+    margin: 0px 0px 20px 0px;
+}
+
+.hp1{
+    display: block;
+    width: 100%;
+    background-color: darkred;
+    color: whitesmoke;
+    margin:0;
+}
+
+.cinemaArtistas{
+    grid-area: cinemaArtistas;
+    background-color: yellow;
+}
+.cinemaFooter{
+    grid-area: cinemaFooter;
+    background-color: red;
+}
+.tres{
+    grid-area: tres;
+    background-color: red;
+}
+.cuatro{
+    grid-area: cuatro;
+    background-color: red;
+}
+.cerrarSesion{
+    align-self: flex-end;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 2px #0d47a1;
+    border: black;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.inicioSesion{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 2px #0d47a1;
+    border: black;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+.cinemaContainer{
+    padding: 0 15% 0 15%; /* Ancho del contenido */
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    text-align: center;
+    height: 1350px;
+}
+
+#dia {
+    width: 30%;
+    margin: 8px 10% 10px 0%;
+    color: white;
+}
+.login{
+    position: relative;
+    left: 126px;
+    bottom: 2px;
+    width: 30%;
+    margin: 8px 0% 10px 18%;
+}
+.ImgBusqueda{
+    position: relative;
+    left: 20px;
+    top: -10px;
+    width: 40%;
+    margin: 5px 0% 10px 0%;
+    padding: 0;
+}
+
+
+/*###############################   CSS SLIDER ######################## */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  .a_slider{
+      text-decoration: none;
+      color: white;
+      background-color: #717171;
+      border-radius: 12px;
+      padding: 5px;
+  }
+  
+  .a_slider:hover{
+      background-color: white;
+      color: grey;
+      font-weight: bolder;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/*###############################   CSS SLIDER ######################## */
+
+/* CODIGO ANDREW */
+
+.img-busqueda{
+    position: relative;
+    top: 11px;
+}
+
+.footer{
+    background-color: darkred;
+}
+
+.copy-right{
+    margin: 23px 0px 0px 0px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 16px;
+}
+
+.menu{
+    position: relative;
+    bottom: 47px;
+    left: 55px;
+}
+
+
+ul li{
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    box-shadow: 2px 2px 4px darkred;
+}
+
+.header {
+    margin:auto;
+    width:500px;
+}
+
+.menu li a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu > li{
+    float: left;
+}
+
+.menu li a:hover {
+    background-color:#434343;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    left: 84px;
+    max-width: 140px;
+}
+
+.sub-menu{
+    z-index: 1;
+}
+
+.menu li:hover > ul {
+    display:block;
+}
+
+.menu-uno{
+    width: 140px;
+}
+
+.menu-dos, .menu-tres, .menu-cuatro{
+    width: 140px;
+} 
+/* CODIGO ANDREW */
+
+
+/* SECCION PELICULAS */
+
+.peli2{
+    color: white;
+}
+
+.lista .content-list li{
+    list-style: none;
+    color: white;
+}
+
+.content-list{
+    margin: 0;
+}
+
+.trailer{
+    margin-bottom: 45px;
+}
+
+.img-trail{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px darkred;
+}
+
+.imagen-trailer{
+    margin-bottom: 45px;
+    position: relative;
+    right: 368px;
+}
+
+.horarios{
+    position: relative;
+    bottom: 340px;
+    left: 20px;
+}
+
+.lista{
+    position: relative;
+    left: 297px;
+    bottom: 461px;
+    margin: 0;
+    width: 640px;
+}
+
+/* SECCION PELICULAS */
+
+
+/*###############################   CSS SLIDER ######################## */
+
+/* SECCION STEVEN */
+
+.divmenu{
+    margin-top: 40px;
+    margin-left: 40px;
+    float: left;
+    width: 670px;
+    height: 342px;
+    border: 2px solid rgba(17, 17, 17, 0);
+}
+.divdia{
+    margin-left: 140px;
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid red;
+    width: 400px;
+    height: 410px;
+    transition: 2s;
+    color: red;
+    float: left;
+}
+.Con_pri{
+    background-color: rgba(17, 17, 17, 0.808);
+    width: 1300px;
+    height: 2800px;
+    border: 2px solid black;
+    margin: auto;
+}
+div.aco{
+    float: left;
+    transition: 5s;
+    width: 770px;
+    min-height: 100px;
+    background-color: rgba(63, 5, 5, 0.473);
+
+    border-radius: 5px;
+
+}
+div.sub{
+    float: left;
+    transition: 4s;
+    width: 770px;
+    min-height: 40px;
+    background-color: rgba(73, 3, 3, 0.788);
+    float: left;
+}
+
+div.titulo{
+
+    float: left;
+    border-bottom: 2px solid black; 
+    width: 770px;
+    height: 40px;
+    background-color: #690000d2;
+
+
+}
+p.tit{
+    text-align: center;
+    margin: 13px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+div.info{
+
+float: left;
+width: 770px;
+    height: 0px;
+    background-color: rgba(163, 46, 46, 0.856);
+    overflow: hidden;
+
+}
+p.info{
+
+    margin: 20px;
+    text-align: center;
+    color:rgb(218, 214, 179);
+}
+div.sub:hover div.info{
+    float: left;
+    width: 770px;
+    min-height: 200px;
+    background-color: rgba(17, 17, 17, 0.808);
+}
+.a{
+    color: white;
+}
+b{
+    color: red;
+}
+
+td{
+    border: 2px solid darkred;
+}
+
+th{
+    color: black;
+    background-color: lightgray;
+    border: 2px solid darkred;
+}
+
+/* SECCION STEVEN */

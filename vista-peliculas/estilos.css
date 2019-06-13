@@ -1,0 +1,235 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("media/f4.png");
+    /*background-color: rgba (255,255,255,0.8);*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+
+}
+.cinemaLogin{
+    background-color: darkred;
+    height: 40px;
+}
+.cinemaheader{
+    height: 100px;   
+}
+
+/* SECCION PELICULAS */
+
+.peli2{
+    color: white;
+}
+
+.lista .content-list li{
+    list-style: none;
+    color: white;
+}
+
+..content-list{
+    margin: 0;
+}
+
+.trailer{
+    margin-bottom: 45px;
+}
+
+.img-trail{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px darkred;
+}
+
+.imagen-trailer{
+    margin-bottom: 45px;
+    position: relative;
+    right: 368px;
+}
+
+b{
+    color: darkred;
+}
+
+td{
+    background-color: lightskyblue;
+    border: 2px solid darkred;
+}
+
+th{
+    color: darkred;
+    background-color: lightgray;
+    border: 2px solid darkred;
+}
+
+.horarios{
+    position: relative;
+    bottom: 340px;
+    left: 20px;
+}
+
+.lista{
+    position: relative;
+    left: 297px;
+    bottom: 461px;
+    margin: 0;
+    width: 640px;
+}
+
+/* SECCION PELICULAS */
+
+.logo{
+
+    width: 10%;
+    border-radius: 30px;
+    position: relative;
+    left: 20px;
+    top: 0px;
+}
+
+.comidas{
+    display: inline-flex;
+    width: 100%;
+}
+
+.menu ul li{
+    background-color: black;
+    width: 80%;
+    display: inline;
+    position: relative;
+    top: -100px;
+    left: 80px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px darkred;
+}
+
+.menu ul li:hover{
+    background-color: yellow;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.menu ul li a:hover{
+    color: darkred;
+}
+
+
+.cinemaBusqueda{
+    background-color: #3949AB;
+}
+.cinemaSliderCartelera{
+    grid-area: cinemaSliderCartelera;
+    background-color: yellow;
+}
+.cinemaSliderCortos{
+    grid-area: cinemaSliderCortos;
+    background-color: yellow;
+}
+.cinemaBannerComida{
+    grid-area: cinem
+    aBannerComida;
+
+
+}
+.c1{
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 4px 4px 4px darkred;
+    border-radius: 6px;
+    position: relative;
+    left: 80px;
+}
+
+.c2{
+    width: 46%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 4px 4px 4px darkred;
+    border-radius: 6px;
+    position: relative;
+    right: 80px;
+}
+
+.p1{
+    box-shadow: 6px 6px 6px #3949AB;
+    width: 100%;
+}
+
+.cinemaBannerComida2{
+    grid-area: cinemaBannerComida2;
+}
+.cinemaBannerTienda{
+    box-shadow: 6px 6px 6px #3949AB;
+    margin: 0px 0px 20px 0px;
+}
+
+.hp1{
+    display: block;
+    width: 100%;
+    background-color: darkred;
+    color: whitesmoke;
+}
+
+.cinemaArtistas{
+    grid-area: cinemaArtistas;
+    background-color: yellow;
+}
+.cinemaFooter{
+    grid-area: cinemaFooter;
+    background-color: red;
+}
+.tres{
+    grid-area: tres;
+    background-color: red;
+}
+.cuatro{
+    grid-area: cuatro;
+    background-color: red;
+}
+.cerrarSesion{
+    align-self: flex-end;
+}
+.cinemaContainer{
+    padding: 0 150px 0 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    text-align: center;
+    /*background-color: rgb(29, 29, 253);*/
+    height: 100%;
+
+}
+.cerrarSesion {
+    position: relative;
+    left: 250px;
+    top: 5px;
+    border-radius: 20%;
+}
+.inicioSesion{
+    position: relative;
+    left: 250px;
+    top: 5px;
+    border-radius: 20%;
+}
+.buscar{
+    position: relative;
+    left: -250px;
+    width: 200px;
+    top: 5px;
+}
+.busqueda{
+    position: relative;
+    left: -250px;
+    top: 5px;
+    border-radius: 20%;
+}
+.ImgBusqueda{
+    position: relative;
+    left: -500px;
+    top: -18px;
+}
